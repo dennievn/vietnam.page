@@ -3,14 +3,32 @@ body {
 	background-repeat: no-repeat;
 	font: 1.5 Times, serif;
 	max-width: 100%;
-	margin: 0;
-	padding: 0;
+
+}
+.main-header{
+	margin: 20px;
+	background-image: linear-gradient(to left, rgba(126, 213, 111, 0.7), rgba(40, 180, 131, 0.7))
+, url("img/landscape-1504936_960_720.jpg");
+	box-sizing: border-box;
+	background-size: cover;
+	background-position: center;
+	height: 93vh;
+	clip-path: polygon( 0 0, 100% 0, 100% 80vh, 0 100% );
+}
+.logo-box{
+	display: block;
+	position: absolute;
+	top: 40px;
+	left: 55px;
+	
+}
+.vn-logo{
+	width: 60%;
 }
 .container {
 	background-color: #ad1f1f;
 	font-color: #f0cd42;
 	border-radius: 3px;
-	margin: 16px;
 }
 .img_body {
  	background-color: #f0cd42;
