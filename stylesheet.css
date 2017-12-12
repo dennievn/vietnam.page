@@ -1,7 +1,7 @@
 body {
 	background-image: url("img/sky-and-clouds.jpg");
 	background-repeat: no-repeat;
-	font: 1.5 Times, serif;
+	font-family: monospace;
 	max-width: 100%;
 
 }
@@ -25,6 +25,51 @@ body {
 .vn-logo{
 	width: 60%;
 }
+.vn-title{
+	color: white;
+	text-transform: uppercase;
+}
+.title-box{
+	position: absolute;
+	top: 40%;
+	left: 48%;
+	transform: translate(-50%, -50%);
+}
+.title-first{
+	display: block;
+	font-family: "Eagle Lake";
+	font-weight: bold;
+	font-size: 70px;
+	padding: 25px;
+	animation-name: moveRight;
+	animation-duration: 2s;
+}
+.title-second{
+	display: block;
+	animation-name: moveLeft;
+	animation-duration: 1s;
+}
+@keyframes moveRight{
+	0%{
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+	100%{
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+@keyframes moveLeft{
+	0%{
+		opacity: 0;
+		transform: translateX(100px);
+
+	}
+	100%{
+		opacity: 1;
+		transform: translate(0);
+	}
+}
 .container {
 	background-color: #ad1f1f;
 	font-color: #f0cd42;
@@ -36,7 +81,6 @@ body {
 }
 .vn_title {
 	color: #f0cd42;
-	font-family: Eagle Lake;
 	font-size: 50px;
 	padding: 16px;
 }
