@@ -18,7 +18,7 @@ body {
 .logo-box{
 	display: block;
 	position: absolute;
-	top: 40px;
+	top: 30px;
 	left: 55px;
 	
 }
@@ -34,27 +34,32 @@ body {
 	top: 40%;
 	left: 48%;
 	transform: translate(-50%, -50%);
+	text-align: center;
 }
 .title-first{
 	display: block;
 	font-family: "Eagle Lake";
 	font-weight: bold;
-	font-size: 70px;
-	padding: 25px;
+	letter-spacing: 3px;
+	font-size: 72px;
+	padding: 0 25px;
 	animation-name: moveRight;
 	animation-duration: 2s;
 }
 .title-second{
+	letter-spacing: 2.5px;
+	text-align: center;
 	display: block;
 	animation-name: moveLeft;
 	animation-duration: 1s;
+	font-weight: 600;
+
 }
 @keyframes moveRight{
 	0%{
 		opacity: 0;
 		transform: translateX(-100px);
-	}
-	100%{
+	}100%{
 		opacity: 1;
 		transform: translate(0);
 	}
@@ -63,12 +68,32 @@ body {
 	0%{
 		opacity: 0;
 		transform: translateX(100px);
-
-	}
-	100%{
+	}100%{
 		opacity: 1;
 		transform: translate(0);
 	}
+}
+.btn:link, .btn:visited{
+	text-decoration: none;
+	display: inline-block;
+	padding: 15px 40px;
+	border-radius: 100px;
+	margin-top: 80px;
+	font-size: 23px;
+	transition: all 0.2s;
+}
+.btn-white{
+	color: green;
+	background-color: rgba(255,255,255, 0.7);
+	
+}
+.btn:hover{
+	transform: translateY(-3px);
+	box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.btn:active{
+	transform: translateY(-1px);
+	box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 }
 .container {
 	background-color: #ad1f1f;
