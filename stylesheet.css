@@ -41,7 +41,7 @@ body {
 	font-family: "Eagle Lake";
 	font-weight: bold;
 	letter-spacing: 3px;
-	font-size: 72px;
+	font-size: 70px;
 	padding: 0 25px;
 	animation-name: moveRight;
 	animation-duration: 2s;
@@ -79,13 +79,9 @@ body {
 	padding: 15px 40px;
 	border-radius: 100px;
 	margin-top: 80px;
-	font-size: 23px;
+	font-size: 20px;
 	transition: all 0.2s;
-}
-.btn-white{
-	color: green;
-	background-color: rgba(255,255,255, 0.7);
-	
+	position: relative;
 }
 .btn:hover{
 	transform: translateY(-3px);
@@ -94,6 +90,29 @@ body {
 .btn:active{
 	transform: translateY(-1px);
 	box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.btn-white{
+	color: gray;
+	background-color: rgba(255,255,255, 0.9);
+}
+.btn::after{
+	content: "";
+	display:inline-block;
+	height: 100%;
+	width: 100%;
+	border-radius: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	transition: all .4s;
+}
+.btn-white::after{
+	background-color: white;
+}
+.btn:hover::after{
+	transform: scale(1.5);
+	opacity: 0;
 }
 .container {
 	background-color: #ad1f1f;
